@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "name": "Machu",
+      "country": "Peru",
+      "price": "500",
+      "description": "Located high in the Andes mountains of Peru, Machu Picchu is now believed to have been a sacred royal retreat for the Incan rulers.",
+      "img": "https://i.ibb.co/PZxvh1Y/willian-justen-de-vasconcellos-3-Dv-IZQ0q7h-M-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "name": "The Colosseum",
+      "country": "Italy",
+      "price": "800",
+      "description": "Take some time to explore the outskirts of Rome, too. Consider a hike along a tomb-lined section of the Appian Way.",
+      "img": "https://i.ibb.co/jbcCt7j/david-kohler-VFRTXGw1-Vj-U-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pyramids",
+      "country": "Egypt",
+      "price": "900",
+      "description": "The Pyramids of Giza take ancient to a whole other level. These were built over 4,500 years ago.",
+      "img": "https://i.ibb.co/47H1QPy/jeremy-bezanger-j-8u-d-Oeo0-unsplash.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Canyon",
+      "country": "America",
+      "price": "850",
+      "description": "This incredible natural wonder is in the U.S. state of Arizona. It's one of those beautiful places.",
+      "img": "https://i.ibb.co/GncNfRQ/world-top-places-to-visit-grand-canyon-arizona-2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Petra",
+      "country": "Jordan",
+      "price": "1700",
+      "description": "You may have an Indiana Jones feeling as you walk through a 1.2-kilometer-long narrow crack in the sandstone hills.",
+      "img": "https://i.ibb.co/vkKqV22/top-attractions-in-the-world-jordan-petra.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Great Wall",
+      "country": "China",
+      "price": "1200",
+      "description": "In a land of modern cities and towering skyscrapers, the Great Wall of China, built between the 14th and 17th centuries.",
+      "img": "https://i.ibb.co/Y8sJbLH/top-attractions-in-the-world-china-great-wall.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Eiffel Tower",
+      "country": "France",
+      "price": "950",
+      "description": "No visit to the French capital is complete without a trip to and a trip up its most iconic structure.",
+      "img": "https://i.ibb.co/mvdpWk2/soroush-karimi-IZ86s5e-V4h-A-unsplash.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Borobudur",
+      "country": "Indonesia",
+      "price": "800",
+      "description": "Borobudur dates from the 9th century and is one of the largest Buddhist temples in the world.",
+      "img": "https://i.ibb.co/ftFHGJ3/top-attractions-in-the-world-indonesia-borobudur.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Marrakesh",
+      "country": "Russia",
+      "price": "1200",
+      "description": "Start your Marrakech adventure in the Jemaa el-Fnaa, the main, open square in the Moroccan city.",
+      "img": "https://i.ibb.co/THJ4cKs/morocco-marrakesh-top-attractions-djemaa-el-fna.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Statue of Liberty",
+      "country": "USA",
+      "price": "1500",
+      "description": "One of the five boroughs of New York City, Manhattan is actually an island, bordered by the East River.",
+      "img": "https://i.ibb.co/mCmmYFJ/top-places-to-visit-in-the-world-manhattan-new-york.jpg"
+    }
+  ]

@@ -5,12 +5,13 @@ import "./ManageAll.css"
 const ManageAll = () => {
 
     const [users, setUsers] = useState([]);
+    const [modifiedCount, setModifiedCount] = useState(0);
 
     useEffect(() => {
         fetch('http://localhost:5000/users')
             .then(res => res.json())
             .then(data => setUsers(data));
-    }, []);
+    }, [modifiedCount]);
 
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
@@ -31,6 +32,24 @@ const ManageAll = () => {
                 })
         }
     }
+    // ---------Update Status-----------//
+    
+    const handleSubmit = (id) => {
+        const data ={status: 'Approved'}
+        fetch(`http://localhost:5000/update/${id}`, {
+            method: "PUT",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((result) => {
+                if (result.modifiedCount) {
+                    alert('Updated successfully');
+                }
+                setModifiedCount(result.modifiedCount);
+            });
+        console.log(id);
+    };
 
     return (
         <>
@@ -57,9 +76,7 @@ const ManageAll = () => {
                                         <span className="card-title "><b>Date:</b> {subusers.date}</span> <br />
                                         <span className="card-title "><b>Address:</b> {subusers.address}</span> <br /><br />
                                         <button onClick={() => handleDelete(subusers._id)} className="btn btn-danger">Delete</button>
-                                        <Link to={`/update/${subusers._id}`}>
-                                            <button className="btn btn-info fw-bold rounded-3 text-white ms-2">Update Status</button>
-                                        </Link>
+                                        <button onClick={() => handleSubmit(subusers._id)} className="btn btn-info fw-bold rounded-3 text-white ms-2">Approved</button>
                                     </div>
                                 </div>
                             </div>

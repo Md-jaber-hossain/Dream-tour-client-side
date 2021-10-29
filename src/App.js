@@ -10,7 +10,6 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import UpdateUser from './components/UpdateUser/UpdateUser';
 import AddPackages from './components/AddPackages/AddPackages';
 import BookingForm from './components/BookingForm/BookingForm';
 import MyBookings from './components/MyBookings/MyBookings';
@@ -36,9 +35,6 @@ function App() {
             </Route>
             <Route exact path="/mybookings">
               <MyBookings></MyBookings>
-            </Route>
-            <Route exact path="/update/:updateId">
-              <UpdateUser></UpdateUser>
             </Route>
             <Route exact path="/manageall">
                 <ManageAll></ManageAll>

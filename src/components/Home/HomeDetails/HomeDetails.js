@@ -6,7 +6,7 @@ const HomeDetails = () => {
     const [packages, setPackage] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://mysterious-beach-03194.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setPackage(data));
     }, []);

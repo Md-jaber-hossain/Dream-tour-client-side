@@ -7,7 +7,7 @@ const MyBookings = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/mybooking/${user.email}`)
+        fetch(`https://mysterious-beach-03194.herokuapp.com/mybooking/${user.email}`)
             .then((res) => res.json())
             .then((data) => setMypackages(data));
     }, [user.email]);
@@ -16,7 +16,7 @@ const MyBookings = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `https://mysterious-beach-03194.herokuapp.com/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

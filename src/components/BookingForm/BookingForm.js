@@ -16,7 +16,7 @@ const BookingForm = () => {
     const { register, handleSubmit, setFocus, reset } = useForm();
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://mysterious-beach-03194.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);
@@ -38,7 +38,7 @@ const BookingForm = () => {
         data.price = detailsMatchedCard.price
         data.description = detailsMatchedCard.description
         data.status = "panding";
-        axios.post('http://localhost:5000/adduser', data)
+        axios.post('https://mysterious-beach-03194.herokuapp.com/adduser', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

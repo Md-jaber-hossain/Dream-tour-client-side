@@ -8,7 +8,7 @@ const ManageAll = () => {
     const [modifiedCount, setModifiedCount] = useState(0);
 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://mysterious-beach-03194.herokuapp.com/users')
             .then(res => res.json())
             .then(data => {
                 setUsers(data);
@@ -19,7 +19,7 @@ const ManageAll = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `https://mysterious-beach-03194.herokuapp.com/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -39,7 +39,7 @@ const ManageAll = () => {
     
     const handleSubmit = (id) => {
         const data ={status: 'Approved'}
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://mysterious-beach-03194.herokuapp.com/update/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

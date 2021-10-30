@@ -10,7 +10,10 @@ const ManageAll = () => {
     useEffect(() => {
         fetch('http://localhost:5000/users')
             .then(res => res.json())
-            .then(data => setUsers(data));
+            .then(data => {
+                setUsers(data);
+                setModifiedCount(0);
+            });
     }, [modifiedCount]);
 
     const handleDelete = id => {
@@ -43,9 +46,9 @@ const ManageAll = () => {
         })
             .then((res) => res.json())
             .then((result) => {
-                if (result.modifiedCount) {
-                    alert('Updated successfully');
-                }
+                // if (result.modifiedCount) {
+                //     alert('Updated successfully');
+                // }
                 setModifiedCount(result.modifiedCount);
             });
         console.log(id);
@@ -62,7 +65,7 @@ const ManageAll = () => {
                     {
                         users.map(subusers => <div key={subusers._id}>
                             <div className="col">
-                                <div className="h-100 home-card-styles">
+                                <div className="h-100 home-card-styles card-zoom">
                                     <div className="card-body">
                                         <h5 className="card-title text-center ">Package Info</h5>
                                         <span className="card-title "><b>Package Name:</b> {subusers.service}</span> <br />

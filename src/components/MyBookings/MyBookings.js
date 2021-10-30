@@ -40,8 +40,10 @@ const MyBookings = () => {
                 {mypackages?.map((pd, index) => (<div key={pd._id}>
 
                     <div className="col">
-                        <div className="h-100 home-card-styles">
-                            <img src={pd.img} className="card-img-top my-event-img-style" alt="..." />
+                        <div className="h-100 home-card-styles card-zoom">
+                            <div className="img-zoom">
+                                <img src={pd.img} className="card-img-top my-event-img-style" alt="..." />
+                            </div>
                             <div className="card-body">
                                 <h5 className="card-title text-center ">Package Info</h5>
                                 <span className="card-title "><b>Package Name:</b> {pd.service}</span> <br />

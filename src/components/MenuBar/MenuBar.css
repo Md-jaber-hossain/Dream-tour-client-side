@@ -16,15 +16,15 @@
 .list:hover {
   color: rgb(33, 186, 247);
   border-radius: 15px;
-  background-color: snow;
 }
 .signup-btn-style{
   border: none;
   border-radius: 5px;
-  background-color: rgb(252, 38, 38);
+  background-color: rgb(0, 197, 223);
   color: white;
   width: 100px;
   height: 30px;
+  font-weight: 700;
 }
 
   

@@ -26,10 +26,10 @@ const AddPackages = () => {
                 <div className="col-md-6">
                     <div className="Add-Package-main my-5">
                         <form onSubmit={handleSubmit(onSubmit)} className="AddPackage-form">
-                            <input {...register("name", { required: true })} placeholder="Name" />
-                            <input {...register("country", { required: true })} placeholder="Country" />
-                            <textarea {...register("description")} placeholder="Description" />
-                            <input type="number" {...register("price")} placeholder="Price" />
+                            <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
+                            <input {...register("country", { required: true, maxLength: 20 })} placeholder="Country" />
+                            <textarea {...register("description", { required: true, maxLength: 44 })} placeholder="Description" />
+                            <input type="number" {...register("price", { required: true, maxLength: 20 })} placeholder="Price" />
                             <input type="date" {...register("date")} placeholder="date" />
                             <input {...register("img")} placeholder="image url" />
                             <input type="submit" className="bg-info text-white fw-bold" />

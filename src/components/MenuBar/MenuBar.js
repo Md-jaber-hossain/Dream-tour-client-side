@@ -27,6 +27,9 @@ const MenuBar = () => {
             {
               user.email && <Nav.Link as={Link} to="/manageall" className="list">Manage All Bookings</Nav.Link>
             }
+            {
+              user.email && <Nav.Link as={Link} to="/admin" className="list">Admin</Nav.Link>
+            }
 
             {!user?.email && <Link to="/login" className="list">
               <li className="text-info">Login</li>
@@ -39,7 +42,7 @@ const MenuBar = () => {
 
             {user?.email ?
               <button className="signup-btn-style" onClick={logout}>Logout</button> :
-              <Nav.Link as={Link} to="/register"><button className="signup-btn-style"><i className="fas fa-sign-in-alt"></i> Sign up</button></Nav.Link>
+              <Nav.Link as={Link} to="/register"><button className="signup-btn-style"><i className="fas fa-sign-in-alt"></i> Register</button></Nav.Link>
             }
 
           </Navbar.Collapse>

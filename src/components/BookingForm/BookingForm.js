@@ -13,6 +13,8 @@ const BookingForm = () => {
 
     const [users, setUsers] = useState([]);
 
+    const { register, handleSubmit, setFocus, reset } = useForm();
+
     useEffect(() => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
@@ -20,9 +22,13 @@ const BookingForm = () => {
     }, []);
 
     const detailsMatchedCard = users?.find(subusers => subusers._id === bookingId);
-    // ----------------- //
 
-    const { register, handleSubmit, reset } = useForm();
+    // focus on package name field //
+    useEffect(() => {
+        setFocus("service");
+    }, [setFocus]);
+
+    // --------Post the booking and package--------- //
 
     const onSubmit = data => {
         console.log(data);
@@ -42,7 +48,8 @@ const BookingForm = () => {
     }
 
     return (
-        <>
+        <>  
+            {/* -----Booking form------- */}
             <div className="row">
                 <h2 className="text-center my-5">Package <span className="text-info">Booking</span> Form</h2>
                 <div className="col-md-6">
@@ -58,8 +65,9 @@ const BookingForm = () => {
                         </form>
                     </div>
                 </div>
+                {/* ------Details of specific package------- */}
                 <div className="col-md-6 my-5">
-                    <div className="row row-cols-2 row-cols-md-2 g-4">
+                    <div className="row row-cols-1 row-cols-md-2 g-4">
                         <div className="col container">
                             <div className="h-100 home-card-styles">
                                 <img src={detailsMatchedCard?.img} className="card-img-top img-style" alt="..." />

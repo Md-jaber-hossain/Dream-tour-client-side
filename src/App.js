@@ -14,6 +14,7 @@ import AddPackages from './components/AddPackages/AddPackages';
 import BookingForm from './components/BookingForm/BookingForm';
 import MyBookings from './components/MyBookings/MyBookings';
 import ManageAll from './components/ManageAll/ManageAll';
+import Admin from './components/Admin/Admin';
 
 
 
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path="/home">
               <Home></Home>
+            </Route>
+            <Route exact path="/admin">
+              <Admin></Admin>
             </Route>
             <Route exact path="/addpackages">
               <AddPackages></AddPackages>

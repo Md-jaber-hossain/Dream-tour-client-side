@@ -16,7 +16,7 @@ const TourPercent = () => {
                 </div>
             </div>
 
-            <div className="container my-5">
+            <div id="percent" className="container my-5">
                 <div className="row mx-auto">
                     {/* <div className="col-lg-12"> */}
                     <div className="card mb-6 tour-card-shadow">

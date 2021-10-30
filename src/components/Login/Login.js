@@ -38,12 +38,21 @@ const Login = () => {
         // login form
         <div className="container text-center ">
             <div className="row">
+                <div className="col-md-6">
+                    <div className="img mt-5">
+                        <img
+                            className="image-fluid w-100"
+                            src="https://i.ibb.co/C896Txx/undraw-Social-share-re-qb4v.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
                 <div className="login-area col-md-6 mt-5 mb-5">
                     <div>
                         <div className="login-box d-flex align-items-center justify-content-center">
                             <div className="login">
                                 <div className="login-box">
-                                    <h2 className="text-info">Pease Login <i className="fas fa-sign-in-alt"></i></h2>
+                                    <h2 className="text-info"><i className="fas fa-sign-in-alt"></i> Pease Login</h2>
                                     <p className="text-danger">{message}</p>
                                     <form onSubmit={handleEmailPassLogin}>
                                         <input
@@ -74,24 +83,15 @@ const Login = () => {
                     </div>
                     <div className="d-flex justify-content-center">
                         <button className="btn btn-primary text-white" onClick={handleGoogleLogin}>
-                        <i className="fab fa-google"></i> Google sign-in
+                            <i className="fab fa-google"></i> Google sign-in
                         </button>
 
                         <button className=" ms-3 btn btn-danger text-white " onClick={hanleResetPassword}>
-                        <i className="fas fa-unlock-alt"></i> Reset Password
+                            <i className="fas fa-unlock-alt"></i> Reset Password
                         </button>
                     </div>
                     <br /><br />
                     <Link to="/register" className="text-danger">Are you new User?</Link>
-                </div>
-                <div className="col-md-6">
-                    <div className="img mt-5">
-                        <img
-                            className="image-fluid w-100"
-                            src="https://i.ibb.co/C896Txx/undraw-Social-share-re-qb4v.png"                           
-                            alt=""
-                        />
-                    </div>
                 </div>
             </div>
         </div>

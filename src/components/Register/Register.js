@@ -11,7 +11,7 @@ const Register = () => {
     const location = useLocation()
     const url = location.state?.from || "/home"
 
-    const handleOnSubmit=(e)=> {
+    const handleOnSubmit = (e) => {
         e.preventDefault();
         registrationSubmit();
         history.push(url)
@@ -21,12 +21,21 @@ const Register = () => {
         // Display the registration form
         <div className="App container ">
             <div className="row">
+                <div className="col-md-6 my-5">
+                    <div className="">
+                        <img
+                            className="image-fluid w-100"
+                            src="https://i.ibb.co/h1JJ3wz/undraw-My-notifications-re-ehmk.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
                 <div className="login-area col-md-6 mt-4 mb-5">
                     <div>
                         <div className="login-box d-flex align-items-center justify-content-center">
                             <div className="login">
                                 <div className="login-box">
-                                    <h2 className="text-info"><i className="fas fa-user-plus"></i> Pease Register </h2>
+                                    <h2 className="text-info"><i className="fas fa-sign-in-alt"></i> Pease Register </h2>
                                     {/* <p>{message}</p> */}
                                     <form onSubmit={handleOnSubmit}>
                                         <input
@@ -67,15 +76,6 @@ const Register = () => {
                                 <Link to="/login" className="text-danger">Already have an account?</Link>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-md-6 my-5">
-                    <div className="">
-                        <img
-                            className="image-fluid w-100"
-                            src="https://i.ibb.co/h1JJ3wz/undraw-My-notifications-re-ehmk.png"
-                            alt=""
-                        />
                     </div>
                 </div>
             </div>

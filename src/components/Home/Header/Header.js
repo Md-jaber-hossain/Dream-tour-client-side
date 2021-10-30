@@ -1,5 +1,7 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import "./Header.css"
 
 const Header = () => {
@@ -18,7 +20,7 @@ const Header = () => {
             <div className="carousel-caption detail-margin">
               <h2 className="title-header">The Best Travel for You</h2>
               <p>Take a look outside. The days are getting longer. The tulips are blooming.</p>
-              <Link to="/home"><button className="btn btn-info text-white"><i className="fas fa-info-circle"></i> More Details</button></Link>
+              <Nav.Link as={HashLink} to="/home#about"><button className="btn btn-info text-white"><i className="far fa-address-card"></i> About Dream Tour</button></Nav.Link>
             </div>
           </div>
           <div className="carousel-item black1">
@@ -26,15 +28,15 @@ const Header = () => {
             <div className="carousel-caption detail-margin">
               <h2 className="title-header">See The World</h2>
               <p>Every place is the best tourist spot if you have capability to enjoy the moment.</p>
-              <Link to="/home"><button className="btn btn-info text-white"><i className="fas fa-info-circle"></i> More Details</button></Link>
+              <Nav.Link as={HashLink} to="/home#about"><button className="btn btn-info text-white"><i className="far fa-address-card"></i> About Dream Tour</button></Nav.Link>
             </div>
           </div>
           <div className="carousel-item black1">
             <img src="https://i.ibb.co/3kx0X0M/makm-photography-u0ir-C-Unb-Ok-unsplash.jpg" className="d-block w-100 img-height" alt="..." />
             <div className="carousel-caption detail-margin">
-              <h2 className="title-header">Are You Looking for Cheap Tour ? </h2>
+              <h2 className="title-header">Looking Cheap Tour ? </h2>
               <p>We provide the chipest and best comfortable travel service for our clients.</p>
-              <Link to="/home"><button className="btn btn-info text-white"><i className="fas fa-info-circle"></i> More Details</button></Link>
+              <Nav.Link as={HashLink} to="/home#about"><button className="btn btn-info text-white"><i className="far fa-address-card"></i> About Dream Tour</button></Nav.Link>
             </div>
           </div>
         </div>

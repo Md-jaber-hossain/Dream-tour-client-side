@@ -1,0 +1,33 @@
+.admin-area {
+    background: rgb(1, 41, 48);
+    color: rgb(255, 255, 255);
+    height: 130vh;
+    width: 35vh;
+    margin-top: 100px;
+    /* position: fixed; */
+  }
+  .admin-container {
+    overflow-x: hidden;
+  }
+  .admin-menu {
+    list-style: none;
+    cursor: pointer;
+  }
+  .admin-menu:hover {
+    color: rgb(0, 238, 255);
+  }
+
+  /* Media query for responsive */
+
+/* mobile */
+@media only screen and (max-width:688px){
+  .admin-area {
+    background: rgb(1, 41, 48);
+    color: rgb(255, 255, 255);
+    height: 40vh;
+    width: 35vh;
+    margin-top: 100px;
+    margin: auto;
+    /* position: fixed; */
+  }
+}

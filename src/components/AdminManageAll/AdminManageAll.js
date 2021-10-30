@@ -12,6 +12,7 @@ const AdminManageAll = () => {
             .then(data => setUsers(data));
     }, [modifiedCount]);
 
+    // ------Delete bookings --------//
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
@@ -51,6 +52,7 @@ const AdminManageAll = () => {
     };
 
     return (
+        // --------Admin Manage all bookings page--------//
         <>
             <div className="container">
                 <div className="col-md-12 text-center my-5">

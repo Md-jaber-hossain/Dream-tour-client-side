@@ -23,7 +23,7 @@ const BookingForm = () => {
 
     const detailsMatchedCard = users?.find(subusers => subusers._id === bookingId);
 
-    // focus on package name field //
+    // ----focus on package name field---- //
     useEffect(() => {
         setFocus("service");
     }, [setFocus]);

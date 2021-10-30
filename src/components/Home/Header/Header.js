@@ -6,7 +6,7 @@ import "./Header.css"
 
 const Header = () => {
   return (
-    // Header section implementation with carousel
+    // ----Header section implementation with carousel----//
     <div className="">
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">

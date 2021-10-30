@@ -3,7 +3,7 @@ import "./FeatureTour.css"
 
 const FeatureTour = () => {
     return (
-        // Feature tour country card
+        //------- Feature tour country card----------//
         <div id="expert-doctors">
             <div className=" container my-5">
                 <div className="row">

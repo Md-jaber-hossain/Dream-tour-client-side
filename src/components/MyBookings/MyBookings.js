@@ -12,7 +12,7 @@ const MyBookings = () => {
             .then((data) => setMypackages(data));
     }, [user.email]);
 
-
+    // ----Delete My Bookings------//
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
@@ -34,6 +34,7 @@ const MyBookings = () => {
     }
 
     return (
+        // -------My Bookings information show-------//
         <div className="container my-5">
             <h1 className="text-center my-5">My <span className="text-info">Booking</span> List: {mypackages.length}</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">

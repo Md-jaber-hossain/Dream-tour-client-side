@@ -5,7 +5,7 @@ import "./TourPercent.css"
 
 const TourPercent = () => {
     return (
-        // facilities information show
+        // -----Tour coverd area information show------//
         <>
             <div className=" container mt-5">
                 <div className="row">
@@ -45,7 +45,6 @@ const TourPercent = () => {
                             </div>
                         </div>
                     </div>
-                    {/* </div> */}
                 </div>
             </div>
         </>

@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <div className="footer-container">
         <div className="container">
-          {/* Footer body */}
+          {/* -----Footer body--- */}
           <div className="row">
             <div className="col-md-3">
 
@@ -34,7 +34,7 @@ const Footer = () => {
                 <p><i className="far fa-envelope"></i> md.jaber8695@gmail.com</p> 
                 <p><i className="fas fa-phone-alt"></i> 01621390353</p>
               </div>
-              {/* Social media Icon for footer*/}
+              {/* -----Social media Icon for footer------*/}
               <div className="d-flex mb-5">
                 <div className="fs-3">
                   <i className="fab fa-facebook-square"></i>

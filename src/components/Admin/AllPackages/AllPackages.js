@@ -22,7 +22,7 @@ const AllPackages = () => {
             </div>
         </div>
     }
-    // Package delete by Admin
+    // ----Package delete by Admin-----//
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {

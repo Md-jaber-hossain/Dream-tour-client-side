@@ -8,6 +8,7 @@ const Admin = () => {
     const [control, setControl] = useState("allPackages");
     console.log(control);
     return (
+        // ------Admin Main Dash Board------------//
         <div className="admin-container">
             <div className="dashboard">
                 <div className="admin-box">
@@ -28,6 +29,7 @@ const Admin = () => {
                                 </div>
                             </div>
                         </div>
+                        {/* -----All package, Add package, All booking page call and show---- */}
                         <div className="col-md-9">
                             {control === "allPackages" && <AllPackages></AllPackages>}
                             {control === "addPackages" && <AddPackages></AddPackages>}

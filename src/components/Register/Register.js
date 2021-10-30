@@ -18,7 +18,7 @@ const Register = () => {
     }
 
     return (
-        // Display the registration form
+        //----- Registration form------//
         <div className="App container ">
             <div className="row">
                 <div className="col-md-6 my-5">

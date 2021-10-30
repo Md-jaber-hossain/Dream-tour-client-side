@@ -9,7 +9,7 @@ const MenuBar = () => {
   const { name, logout, user, loggedInUser } = useAuth();
   return (
     <>
-      {/* Navbar for all pages */}
+      {/* -----Navbar for all pages -------*/}
 
       <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
         <Container>

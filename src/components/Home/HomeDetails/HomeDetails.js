@@ -21,26 +21,8 @@ const HomeDetails = () => {
         </div>
     }
 
-    // const handleDelete = id => {
-    //     const proceed = window.confirm('Are you sure, you want to delete?');
-    //     if (proceed) {
-    //         const url = `http://localhost:5000/services/${id}`;
-    //         fetch(url, {
-    //             method: 'DELETE'
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 console.log(data)
-    //                 if (data.deletedCount) {
-    //                     alert('Deleted successfully')
-    //                     const remaining = packages.filter(service => service._id !== id);
-    //                     setPackage(remaining);
-    //                 }
-
-    //             })
-    //     }
-    // }
     return (
+        // --------Packages for home page---------------//
         <div id="packagess" className="container mt-5 mb-5">
             <div className="col-md-12 text-center my-5">
                 <h2 className="fw-bold">Our <span className="text-info"> Tour</span> Packages</h2>
@@ -65,7 +47,6 @@ const HomeDetails = () => {
                                             <h5 className="card-text">$ {subpackages.price} / Per person</h5>
                                             <Link to={`/bookingform/${subpackages._id}`}> <button className="btn btn-info text-white"><i className="fas fa-suitcase-rolling"></i> Booking</button></Link>
                                         </div>
-                                        {/* <button onClick={() => handleDelete(subpackages._id)} className="btn btn-danger">Cancel</button> */}
                                     </div>
                                 </div>
                             </div>

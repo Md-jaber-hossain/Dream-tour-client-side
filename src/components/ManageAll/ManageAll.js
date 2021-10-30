@@ -55,6 +55,7 @@ const ManageAll = () => {
     };
 
     return (
+        // -----Manage all booking information from Menubar-----//
         <>
             <div id="services" className="container mt-5 mb-5">
                 <div className="col-md-12 text-center my-5">

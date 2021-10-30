@@ -14,7 +14,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         </div>
     }
     return (
-        // private route for redirecting login page to expected page
+        // ----private route for redirecting login page to expected page-----//
         <Route
             {...rest}
             render={({ location }) => user.email ?

@@ -13,7 +13,7 @@ const Admin = () => {
             <div className="dashboard">
                 <div className="admin-box">
                     <div className="row admin-container">
-                        <div className="col-md-3 ">
+                        <div className="col-md-2 ">
                             <div className="admin-area">
                                 <h4 className="mt-4 pt-5 ps-5 text-info"><i className="fas fa-user-cog"></i> Admin Dashboard</h4>
                                 <div className="all-menu mt-4">
@@ -30,7 +30,7 @@ const Admin = () => {
                             </div>
                         </div>
                         {/* -----All package, Add package, All booking page call and show---- */}
-                        <div className="col-md-9">
+                        <div className="col-md-10">
                             {control === "allPackages" && <AllPackages></AllPackages>}
                             {control === "addPackages" && <AddPackages></AddPackages>}
                             {control === "allBookings" && <AdminManageAll></AdminManageAll>}

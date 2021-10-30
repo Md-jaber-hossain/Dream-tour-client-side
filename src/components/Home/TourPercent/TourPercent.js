@@ -21,7 +21,7 @@ const TourPercent = () => {
                     {/* <div className="col-lg-12"> */}
                     <div className="card mb-6 tour-card-shadow">
                         <div className="row g-0 text-lg-start text-center">
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="zoom-in-right" data-aos-easing="ease-in-out" data-aos-delay="500">
                                 <div className="card-body mt-4">
                                     <h5>Area coverd in each country</h5>
                                     <span className="card-text">USA</span>
@@ -38,7 +38,7 @@ const TourPercent = () => {
                                     <ProgressBar animated variant="info" now={100} label={`${100}%`} />
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6" data-aos="zoom-in-left" data-aos-easing="ease-in-out" data-aos-delay="500">
                                 <div className="p-3 my-2">
                                     <img src="https://i.ibb.co/phqBQz9/pexels-te-lensfix-1371360.jpg" className="d-block w-100 tour-img-rounded" alt="..." />
                                 </div>

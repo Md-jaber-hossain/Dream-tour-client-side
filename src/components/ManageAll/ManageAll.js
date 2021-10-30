@@ -36,9 +36,9 @@ const ManageAll = () => {
         }
     }
     // ---------Update Status-----------//
-    
+
     const handleSubmit = (id) => {
-        const data ={status: 'Approved'}
+        const data = { status: 'Approved' }
         fetch(`https://mysterious-beach-03194.herokuapp.com/update/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
@@ -66,7 +66,10 @@ const ManageAll = () => {
                     {
                         users.map(subusers => <div key={subusers._id}>
                             <div className="col">
-                                <div className="h-100 home-card-styles card-zoom">
+                                <div className="h-100 home-card-styles">
+                                    <div className="img-zoom">
+                                        <img src={subusers.img} className="card-img-top my-event-img-style" alt="..." />
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title text-center ">Package Info</h5>
                                         <span className="card-title "><b>Package Name:</b> {subusers.service}</span> <br />

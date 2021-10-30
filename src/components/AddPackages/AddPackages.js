@@ -23,14 +23,14 @@ const AddPackages = () => {
         //-------- Add Package form------------//
         <>
             <div className="row">
-            <h2 className="text-center my-5">Add New <span className="text-info">Package</span></h2>
+                <h2 className="text-center my-5">Add New <span className="text-info">Package</span></h2>
                 <div className="col-md-6">
                     <div className="Add-Package-main my-5">
                         <form onSubmit={handleSubmit(onSubmit)} className="AddPackage-form">
-                            <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-                            <input {...register("country", { required: true, maxLength: 20 })} placeholder="Country" />
-                            <textarea {...register("description", { required: true, maxLength: 44 })} placeholder="Description" />
-                            <input type="number" {...register("price", { required: true, maxLength: 20 })} placeholder="Price" />
+                            <input {...register("name", { required: true })} placeholder="Name" />
+                            <input {...register("country", { required: true })} placeholder="Country" />
+                            <textarea {...register("description", { required: true })} placeholder="Description" />
+                            <input type="number" {...register("price", { required: true })} placeholder="Price" />
                             <input type="date" {...register("date")} placeholder="date" />
                             <input {...register("img")} placeholder="image url" />
                             <input type="submit" className="bg-info text-white fw-bold" />

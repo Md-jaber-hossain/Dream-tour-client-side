@@ -18,7 +18,7 @@ const Header = () => {
           <div className="carousel-item active black1">
             <img src="https://i.ibb.co/V95Kwnk/ryan-schroeder-Gg7u-Kd-HFb-c-unsplash.jpg" className="d-block w-100 img-height" alt="..." />
             <div className="carousel-caption detail-margin">
-              <h2 className="title-header">The Best Travel for You</h2>
+              <h2 className="title-header">Best Travel for You</h2>
               <p>Take a look outside. The days are getting longer. The tulips are blooming.</p>
               <Nav.Link as={HashLink} to="/home#about"><button className="btn btn-info text-white"><i className="far fa-address-card"></i> About Dream Tour</button></Nav.Link>
             </div>

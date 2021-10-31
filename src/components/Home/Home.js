@@ -12,8 +12,6 @@ import TourPercent from './TourPercent/TourPercent';
 
 const Home = () => {
 
-
-
     return (
 
         <>

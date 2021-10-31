@@ -21,7 +21,7 @@ const AddPackages = () => {
 
     return (
         //-------- Add Package form------------//
-        <>
+        <div className="container">
             <div className="row">
                 <h2 className="text-center my-5">Add New <span className="text-info">Package</span></h2>
                 <div className="col-md-6">
@@ -46,7 +46,7 @@ const AddPackages = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 };
 

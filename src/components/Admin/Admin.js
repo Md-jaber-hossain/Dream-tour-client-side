@@ -30,7 +30,7 @@ const Admin = () => {
                             </div>
                         </div>
                         {/* -----All package, Add package, All booking page call and show---- */}
-                        <div className="col-md-10 ">
+                        <div className="col-md-10">
                             {control === "allPackages" && <AllPackages></AllPackages>}
                             {control === "addPackages" && <AddPackages></AddPackages>}
                             {control === "allBookings" && <AdminManageAll></AdminManageAll>}

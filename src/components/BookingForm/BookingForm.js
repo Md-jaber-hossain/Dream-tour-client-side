@@ -48,7 +48,7 @@ const BookingForm = () => {
     }
 
     return (
-        <>  
+        <div className="container">  
             {/* -----Booking form------- */}
             <div className="row">
                 <h2 className="text-center my-5">Package <span className="text-info">Booking</span> Form</h2>
@@ -92,7 +92,7 @@ const BookingForm = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 };
 

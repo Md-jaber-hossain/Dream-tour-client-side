@@ -41,7 +41,7 @@ const MyBookings = () => {
                 {mypackages?.map((pd, index) => (<div key={pd._id}>
 
                     <div className="col">
-                        <div className="h-100 home-card-styles card-zoom">
+                        <div className="card h-100 home-card-styles card-zoom">
                             <div className="img-zoom">
                                 <img src={pd.img} className="card-img-top my-event-img-style" alt="..." />
                             </div>

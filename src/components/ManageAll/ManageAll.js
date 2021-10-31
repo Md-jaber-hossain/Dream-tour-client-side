@@ -66,7 +66,7 @@ const ManageAll = () => {
                     {
                         users.map(subusers => <div key={subusers._id}>
                             <div className="col">
-                                <div className="h-100 home-card-styles">
+                                <div className="card h-100 home-card-styles">
                                     <div className="img-zoom">
                                         <img src={subusers.img} className="card-img-top my-event-img-style" alt="..." />
                                     </div>

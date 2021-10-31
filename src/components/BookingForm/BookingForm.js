@@ -69,7 +69,7 @@ const BookingForm = () => {
                 <div className="col-md-6 my-5">
                     <div className="row row-cols-1 row-cols-md-2 g-4">
                         <div className="col container">
-                            <div className="h-100 home-card-styles">
+                            <div className="card h-100 home-card-styles">
                                 <img src={detailsMatchedCard?.img} className="card-img-top img-style" alt="..." />
                                 <div className="card-body ">
                                     {/* <div className="d-flex justify-content-around"> */}

@@ -15,7 +15,7 @@ import BookingForm from './components/BookingForm/BookingForm';
 import MyBookings from './components/MyBookings/MyBookings';
 import ManageAll from './components/ManageAll/ManageAll';
 import Admin from './components/Admin/Admin';
-
+import AdminManageAll from './components/AdminManageAll/AdminManageAll';
 
 
 function App() {

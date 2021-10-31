@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
 
             <div className="col-md-3">
-              <h4 className="border-style">About Us</h4>
+              <h4 className="border-style">About</h4>
               <p>Find better Place</p>
               <p>Arrange budget Trip</p>
               <p>Make travel Package</p>
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
 
             <div className="col-md-3">
-              <h4 className="border-style">Contact Us</h4>
+              <h4 className="border-style">Contact</h4>
               <div>
                 <p><i className="fas fa-map-marker-alt"></i> Mirpur-1, Dhaka, Bangladesh</p>
                 <p><i className="far fa-envelope"></i> md.jaber8695@gmail.com</p> 
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div className="col-md-3">
-              <h4 className="border-style2">Our Package</h4>
+              <h4 className="border-style2">Package</h4>
               <p>Travel for minimal cost</p>
               <p>World tour in a year</p>
               <p>Europe budge tour</p>

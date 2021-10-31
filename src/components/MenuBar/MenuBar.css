@@ -9,7 +9,7 @@
   font-weight: 500;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 5px;
+  /* padding: 5px; */
   text-decoration: none;
 }
 /* Hover for NavLink */

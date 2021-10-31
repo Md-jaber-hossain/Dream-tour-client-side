@@ -1,6 +1,7 @@
 .package-table-inner{
     border-bottom: 1px solid rgb(185, 182, 182);
 }
+
 /* Media query for responsive */
 
 /* mobile */
@@ -11,11 +12,14 @@
     }
 }
 /* tablet */
-/* @media only screen and (min-width: 688px ) and (max-width: 992px ) {
+@media only screen and (min-width: 688px ) and (max-width: 992px ) {
+    .package-table{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
     
-    
-} */
+}
  /* computer */
-/* @media only screen and (min-width: 992px ) and (max-width: 1312px ) {
-    
-} */
+@media only screen and (min-width: 992px ) and (max-width: 1312px ) {
+   
+}

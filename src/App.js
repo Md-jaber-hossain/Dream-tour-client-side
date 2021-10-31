@@ -31,18 +31,18 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/admin">
+            <PrivateRoute exact path="/admin">
               <Admin></Admin>
-            </Route>
-            <Route exact path="/addpackages">
+            </PrivateRoute>
+            <PrivateRoute exact path="/addpackages">
               <AddPackages></AddPackages>
-            </Route>
-            <Route exact path="/mybookings">
+            </PrivateRoute>
+            <PrivateRoute exact path="/mybookings">
               <MyBookings></MyBookings>
-            </Route>
-            <Route exact path="/manageall">
+            </PrivateRoute>
+            <PrivateRoute exact path="/manageall">
                 <ManageAll></ManageAll>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute exact path="/bookingform/:bookingId">
               <BookingForm></BookingForm>
             </PrivateRoute>

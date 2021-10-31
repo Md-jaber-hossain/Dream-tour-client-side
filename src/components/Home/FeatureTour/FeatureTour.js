@@ -16,7 +16,7 @@ const FeatureTour = () => {
 
             <div className="container my-5">
                 <div className="row row-cols-1 row-cols-md-4 g-4">
-                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="500">
+                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                         <div className="h-100 home-card-styles bg-info">
                             <div className="img-zoom">
                                 <img src="https://i.ibb.co/tbkxDq2/engin-yapici-WA1u0sc-VLZU-unsplash.jpg" className="card-img-top" alt="..." />
@@ -26,7 +26,7 @@ const FeatureTour = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="500">
+                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                         <div className="h-100 home-card-styles bg-info">
                             <div className="img-zoom">
                                 <img src="https://i.ibb.co/r0zL3h4/sylwia-bartyzel-e-U4pip-U-8-HA-unsplash.jpg" className="card-img-top" alt="..." />
@@ -36,7 +36,7 @@ const FeatureTour = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="500">
+                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                         <div className="h-100 home-card-styles bg-info">
                             <div className="img-zoom">
                                 <img src="https://i.ibb.co/r0mQ9cC/facts-about-stonehenge-4.jpg" className="card-img-top" alt="..." />
@@ -46,7 +46,7 @@ const FeatureTour = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="500">
+                    <div className="col" data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="100">
                         <div className="h-100 home-card-styles bg-info">
                             <div className="img-zoom">
                                 <img src="https://i.ibb.co/JpLpXmM/16187.jpg" className="card-img-top" alt="..." />

@@ -1,7 +1,10 @@
-/* body background color */
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   /* background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(238, 248, 247)); */
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 html{
   overflow-x: hidden;

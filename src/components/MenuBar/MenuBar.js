@@ -11,9 +11,11 @@ const MenuBar = () => {
     <>
       {/* -----Navbar for all pages -------*/}
 
-      <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
+      <Navbar bg="white" variant="light" sticky="top" collapseOnSelect expand="lg" >
         <Container>
-          <Navbar.Brand href="#home"><h1 className="fw-bold text-black">Dream <span className="text-info">Tour</span></h1></Navbar.Brand>
+          <Navbar.Brand href="#home">
+          <img src="https://i.ibb.co/qphjJt6/1.png" alt="" className="img-fluid" />
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={HashLink} to="/home" className="list">Home</Nav.Link>

@@ -15,7 +15,7 @@ const Admin = () => {
                     <div className="row admin-container">
                         <div className="col-md-2 ">
                             <div className="admin-area">
-                                <h4 className="mt-4 pt-5 ps-5 text-info"><i className="fas fa-user-cog"></i> Admin Dashboard</h4>
+                                <h4 className="mt-4 pt-5 ps-md-3 ps-5 text-info"><i className="fas fa-user-cog"></i> Admin Dashboard</h4>
                                 <div className="all-menu mt-4">
                                     <li onClick={() => setControl("allPackages")} className="admin-menu p-2 ps-5">
                                         <i className="fas fa-caret-right"></i> All Packages

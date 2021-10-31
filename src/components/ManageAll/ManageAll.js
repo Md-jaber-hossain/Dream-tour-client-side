@@ -59,7 +59,7 @@ const ManageAll = () => {
         <>
             <div id="services" className="container mt-5 mb-5">
                 <div className="col-md-12 text-center my-5">
-                    <h2 className="fw-bold">Manage <span className="text-info"> All</span> Bookings</h2>
+                    <h2 className="fw-bold">Manage <span className="text-info"> All</span> Bookings: {users.length}</h2>
                     <p className="text-secondary text-center">List of users booking info and their package info</p>
                 </div>
                 <div className="row row-cols-1 row-cols-md-3 g-5">
@@ -71,7 +71,7 @@ const ManageAll = () => {
                                         <img src={subusers.img} className="card-img-top my-event-img-style" alt="..." />
                                     </div>
                                     <div className="card-body">
-                                        <h5 className="card-title text-center ">Package Info</h5>
+                                        <h5 className="card-title text-center ">Package Booking Info</h5>
                                         <span className="card-title "><b>Package Name:</b> {subusers.service}</span> <br />
                                         <span className="card-title "><b>Country:</b> {subusers?.country}</span> <br />
                                         <span className="card-title "><b>Cost:</b> $ {subusers?.price}</span> <br />

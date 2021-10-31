@@ -49,7 +49,7 @@ const HomeDetails = () => {
                                     <div className="card-body text-center">
                                         {/* <div className="d-flex justify-content-around"> */}
                                         <h5 className="card-title text-center text-info fw-bold">{subpackages.name}</h5>
-                                        <h5 className="card-title text-center fw-bold"><i class="fas fa-map-marker-alt"></i> {subpackages.country}</h5>
+                                        <h5 className="card-title text-center fw-bold"><i className="fas fa-map-marker-alt"></i> {subpackages.country}</h5>
                                         {/* </div> */}
                                         <p className="card-text text-secondary ">{subpackages.description}</p>
                                         <div className="d-flex justify-content-between">

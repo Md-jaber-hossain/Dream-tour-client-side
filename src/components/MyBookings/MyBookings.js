@@ -46,7 +46,7 @@ const MyBookings = () => {
                                 <img src={pd.img} className="card-img-top my-event-img-style" alt="..." />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title text-center ">Package Info</h5>
+                                <h5 className="card-title text-center ">Package Booking Info</h5>
                                 <span className="card-title "><b>Package Name:</b> {pd.service}</span> <br />
                                 <span className="card-title "><b>Country:</b> {pd?.country}</span> <br />
                                 <span className="card-title "><b>Cost:</b> $ {pd?.price}</span> <br />

@@ -11,7 +11,7 @@ const MenuBar = () => {
     <>
       {/* -----Navbar for all pages -------*/}
 
-      <Navbar bg="white" variant="light" sticky="top" collapseOnSelect expand="lg" >
+      <Navbar bg="light" variant="light" sticky="top" collapseOnSelect expand="lg" >
         <Container>
           <Navbar.Brand href="#home">
             <img src="https://i.ibb.co/qphjJt6/1.png" alt="" className="img-fluid" />
